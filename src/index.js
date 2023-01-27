@@ -21,11 +21,15 @@ class Clock extends React.Component {
     return (
       <h1 className="heading">
         <span className="text">
-          Hello - {this.props.children} {new Date().toLocaleTimeString(this.props.locale)}
+          Hello - {this.props.children}{" "}
+          {new Date().toLocaleTimeString(this.props.locale)}
         </span>
       </h1>
     );
   }
 }
 
-ReactDOM.render(<Clock locale="bn-BD" >Pallab</Clock>, document.getElementById("root"));
+ReactDOM.render(
+  <Clock locale="bn-BD">Pallab</Clock>,
+  document.getElementById("root")
+);
